@@ -227,8 +227,7 @@ function render(){
     return (f.size > 1);
   });
 
-  alive_fireflies = fireflies.length;  
-  
+  alive_fireflies = fireflies.length;   
   if( alive_fireflies < max_fireflies && last_emit - now < - 100){
     fireflies.push( new Firefly());
     last_emit = now;
